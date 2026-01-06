@@ -1,0 +1,21 @@
+
+
+Question 1: How do you feel about using Relational Database to store data? Explain it to your neighbor.
+
+I feel very confident using Relational Databases because they are a tool for staying organized. Imagine if you kept all your household information such as receipts, contacts, car maintenace and medical records in a single pile of paper. It would be impossible to find anything that way.  A Relational Database is like having a set of specialized and smart filing cabinets. You have one cabinet for People, one for Transaction, and one for Products. The Relational part means these cabinets can talk to each other.  If I look at a receipt in the Transactions cabinet, it has a string attached to it that leads me to the correct person in the People cabinet. It prevents mistakes and stops you from writing the same thing twice.
+ 
+Question 2: Describe the key concepts in Entity Relationship Models (The "One Slide" explanation).
+
+There are four key concepts that are very important to remember. Entities are the 'Nouns'. They are the people, places or things we care about (like a Driver or a Car). Attributes are the 'Descriptions'. They are the details about our nouns (like the color of the car or the driver's phone number). Identifiers are the 'Unique Key'. It's the specific ID number that makes sure we don't confuse two people who happen to have the same name.  Relationships are the 'Verbs'. They are the lines that connect nouns to show how they interact (like a Driver operates a Car).
+
+Question 3: Real-life example to explain what entities are.
+
+Let's look at a Hospital. In this enviroment, the 'Entities' are the main subjects we need to keep records for. Patient is an entity (the person receiving care). Doctor is an entity (the person providing care). Room is an entity (the physical place where the patient stays). Each of these is a separate 'table' or 'category' in our system because they each have their own unique set of information.
+
+Question 4: Real-life example to explain what relationships are.
+
+Continuing with the Hospital example, 'Relationships' are the actions that connect our entities together. A Doctor treats a Patient (this connects the Doctor entity to the Patient entity). A Patient is assigned to a Room (this connects the Patient to the Room). Relationships also tell us 'how many'. For example, one Doctor might treat many Patients (a 1:N relationships), but each Patient has only one History Record (a 1:1 relationship). It defines the rules of how these real-life things interact. 
+
+Question 5: What is the most difficult part of this assignment?
+
+The most difficult part of this assignment was the process of translation. While I understand the technical mechanics of databases, explaining them to a 'neighbor' (as required in Questions 1 through 4) forces you to strip away technical jargon and focus on the fundamental logic. It is a challenge to simplify concepts like 'relational logic' or 'cardinality' into everyday analogies without losing the technical accuracy of how a database actually works.
