@@ -1,0 +1,95 @@
+Relation 1
+
+What is the name of the relation: GradeBook
+
+What are the attributes of the relation: ID, Name, Major, Quiz1, Quiz2, Quiz3, Quiz4
+
+What are the tuples of the relation (pick one): (001, Harry, Magic, 90, 90, 80, 100)
+
+What is the degree of the relation: 7 (7 columns, attributes)
+
+What is the cardinality of the relation: 6 (6 rows, instances)
+
+What is the possible domain of attribute ID:  (001 - 399) 3 digits (integer)
+
+What is the possible domain of attribute Name: (Harry - Albus) varchar2(100)
+
+What is the possible domain of attribute Major: (Magic, Service, Education, Management) varchar2(100)
+
+What is the possible domain of attribute Quiz1 - 4: (0-100) up to 3 digits (integer or float)
+
+
+Choose some super keys for this relation: (ID, Name, Major)
+
+If there is no duplicate name of people: 
+
+What might be candidate keys? ID, Name
+
+What might be the primary key? Name
+
+What might be the alternate key? ID
+
+
+If there is no duplicate name of people in the same major, what might be candidate keys?
+
+What might be candidate keys? ID, Name, Major
+
+What might be the primary key? Name, Major
+
+What might be the alternate key? ID
+
+
+If there are duplicate names of people in the system, what might be candidate keys?
+
+What might be candidate keys? ID
+
+What might be the primary key? ID
+
+What might be the alternate key? None
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Relation 2
+For the following relation, answer the questions.
+
+
+What is the name of the relation: ProductDetails
+
+What are the attributes of the relation: SKU, Name, VendorID, Price, Date, Quantity
+
+What are the tuples of the relation (pick one): (KB320, MouseMat, V1230, 13.32, 01/01/2019, 3000, A3, Discontinued
+
+What is the degree of the relation: 8
+
+What is the cardinality of the relation: 6
+
+What is the possible domain of attribute SKU: 2 letters, 3 digits (5 characters)
+
+What is the possible domain of attribute Name: (MouseMat, Mouse) varchar2(100)
+
+What is the possible domain of attribute VendorID: 1 letter 'V', 4 digits (5 characters)
+
+What is the possible domain of attribute Price: float number
+
+What is the possible domain of attribute Date: DD/MM/YYYY or MM/DD/YYYY
+
+What is the possible domain of attribute Quantity: [0-99999] integer number
+
+What is the possible domain of attribute Location: 1 letter A, 1 or more digits
+
+What is the possible domain of attribute Description: varchar(100) and could be empty
+
+
+Choose some super keys for this relation: 
+(Assuming price varies by Date)
+
+SKU, Name, VendorID, Price, Date, Quantity, Location, Description
+SKU, Name, VendorID, Date
+
+What might be candidate keys? (SKU, VendorID, Date); (SKU, VendorID, Price)
+
+What might be the primary key? SKU, VendorID, Date
+
+What might be the alternate key? SKU, VendorID, Price
+

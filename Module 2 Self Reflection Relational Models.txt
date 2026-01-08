@@ -1,0 +1,19 @@
+Question 1: How do you feel about using Relational Models? Why do we need them?
+
+I feel that Relational Models are a powerful way to bring order to the chaos of real-world data. They provide a mathematical and logical structure to information that would otherwise be difficult to manage. We need relational models because they ensure data integrity and minimize redundancy. By organizing data into tables (relations), we can store a piece of information in one place and use keys to link it elsewhere. This prevents "update anomalies" (where you change a value in one place but forget to change it on others) and allows for complex querying through languages like SQL.
+ 
+Question 2: How do you feel about Relational Schemas? (The bridge between natural and programming language).
+
+I am very comfortable with Relational Schemas. I see them as a technical shorthand that is incredibly efficient. While natural language is too vague for a computer and programming code is often too complex for a business owner, the Relational Schema is the perfect middle ground. It allows a designer to look at a single line and inmediately understand the rules, the unique identifiers, and the connections to other tables. It is the "blueprint" of the database.
+ 
+Question 3: How do you feel about the translation from ERDs to Relational Models? Key points for 1:N?
+
+The translation process feels systematic and logical. The key point to remember when to converting a 1 to N (One to Many) relationship is the "Parent-Child" logic: you must take the Primary Key from the "1" side (the parent) and place it as a Foreign Key (fk) in the table on the "N" side (the child). For example, in the Gallery and Drawing case, because in gallery has many drawings, the GalleryNum moves into the Drawing table. We do not create a new table; we simply extend the child table to point back to the parent. 
+
+Question 4: What are the key points to convert an N to N (Many-to-Many) binary relationship?
+
+The key point for an N to N (Many to many) relationship is that it cannot be represented by simply adding a foreign key to one of the existing tables. Instead, you must create a third, separate relation (often called a bridge or associative table). This new table will have a composite Primary Key consisting of the Primary Keys from both participating entities. These attributes also act as Foreign Keys that link back to the original tables. This is exactly what I did in the Artists_Drawings table to link multiple artists to multiple drawings.
+ 
+Question 5: What is the most difficult part of this assignment? (Meta Question)
+
+The most difficult part of this assignment was the precision required in the "Mapping" phase described in Questions 3 and 4. While a visual ERD is intuitive, the technical translation into a Schema requires a high level of ocus to ensure that every Foreign Key is accounted for and every Primary Key is correctly underlined. Specifically, the hardest part is identifying the "direction" of the relationship and ensuring that the Foreign Key is placed in the correct table so the database remains efficient and follows the business rules provided by the client.
