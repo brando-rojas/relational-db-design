@@ -1,0 +1,20 @@
+1. Question 1: Do you agree that normalization is the hardest part? Why?
+I agree to an extent. It’s not "hard" in terms of complex math, but it is challenging because it requires a very high level of logical discipline. Unlike other parts of database design where you just follow a template, normalization forces you to understand the "business rules" behind every piece of data. If you don't correctly identify how one attribute relates to another, your entire table structure will be flawed, leading to data anomalies later.
+
+2. Question 2: Are you comfortable recognizing functional dependencies? What is the best way to do that?
+Yes, I feel much more comfortable now after practicing. The best way to recognize them is to look at the determinants (the left side of the arrow). I always ask myself: "If I know the value of X, do I automatically know exactly one value for Y?" I also find it helpful to look for "hidden bosses"—attributes that aren't the primary key but are acting like one by determining other fields (like Zip determining City or Major determining Description).
+
+3. Question 3: Are you comfortable recognizing normalization forms? What is the best way to do that?
+Yes. The best way is to use a step-by-step checklist rather than trying to guess:
+1NF Check: Are all values atomic? (No lists or groups).
+2NF Check: Is there a composite key? If yes, does any attribute depend on only half of that key?
+3NF Check: Is there a non-key attribute that "points" to another non-key attribute?
+If you go in order (1 → 2 → 3), it’s much harder to get confused.
+
+4. Question 4: Are you comfortable normalizing relations to 3NF? What is the best way to do that?
+
+I am. The best way is the "Decomposition and Link" method. Once I identify a "problem" dependency (either partial or transitive), I "extract" those attributes into a brand-new table. The key is to remember to leave a copy of the determinant in the original table as a Foreign Key. This ensures that even though the data is separated, the relationship is still preserved.
+
+5. Question 5: What is the most difficult part of this assignment?
+
+The most difficult part was Question 3 (the abstract A, B, C, D model). Because there were no "real-world" names like "Student" or "Course," I couldn't rely on intuition. I had to strictly follow the logic of the arrows. Specifically, realizing that Relation2 (from the 2NF step) still needed to be broken down further into Relation3 because of the F, G -> H, I dependency was a "lightbulb moment"—it showed me that normalization is a multi-pass process, not a one-time fix.
