@@ -1,0 +1,30 @@
+Question 1
+
+Based on your understanding, what is the most important takeaway of this assignment? Why?
+
+The most significant takeaway from this assignment is the realization that database design serves as a vital bridge between daily business operations and long-term technical integrity. I learned that normalization is not merely a theoretical exercise but a practical method for preventing data anomalies and ensuring that information remains consistent and reliable over time. By understanding how attributes like service prices or breed descriptions actually function within the clinic's workflow, I was able to appreciate how a properly structured model reduces redundancy and protects the system from the errors that usually plague manual file systems.
+
+
+Question 2
+
+Based on your experience, what is the most difficult part of this assignment? How did you work through the difficulty?
+
+Regarding the challenges faced during the process, I found that identifying partial and transitive dependencies within the Pets and Visit tables was the most difficult aspect of the assignment. It was initially counterintuitive to separate information such as the owner's contact details or the service descriptions into different tables when they seemed so closely related to a specific pet or visit record. I successfully navigated this difficulty by meticulously mapping out every functional dependency and questioning whether each attribute truly required the entire primary key to be identified, which allowed me to see that some data was actually dependent on intermediate fields.
+
+Question 3
+
+What is your most successful approach to learning this content?
+
+My most successful approach to mastering this content was adopting a strictly incremental methodology for the normalization process. Instead of attempting to visualize a final 3NF schema immediately, I focused on verifying each rule in a linear sequence, starting with atomicity in 1NF and then moving on to isolate partial dependencies in 2NF before finally hunting for transitive links. By isolating each step, I could manage the complexity of the PetsCare data without feeling overwhelmed by the number of attributes, which made it much easier to catch subtle errors that might have been ignored if I had rushed directly into the final relational model.
+
+Question 4
+
+If you could grade your assignment on a 1 -  5 scale, 1 as least satisfied and 5 as most satisfied, how would you grade yourself? Why?
+
+If I were to grade my own performance on this assignment on a scale of one to five, I would give myself a five because I effectively translated complex clinical requirements into a professional relational schema. I managed to identify and implement advanced concepts such as recursive relationships for staff supervision and customer referrals while also properly handling the weak entity status of the Pets table using composite keys. Furthermore, my decision to fully decompose the Visit table to separate service logic from transactional data demonstrates a deep understanding of how the final 3NF model promotes data integrity and simplifies future updates for the client.
+
+Question 5
+
+If you had a chance to start over, what would you change?
+
+If I had the opportunity to start this assignment over from the beginning, I would place a much heavier emphasis on the initial data gathering and interview phase with Claire. I realized late in the process that asking more targeted questions about the clinic’s service catalog and how they handle historical pricing would have made the later normalization steps much faster and more intuitive. By gaining a better understanding of the business rules at the very beginning, I could have avoided several revisions to the relational model and arrived at the final 3NF structure with much more confidence and efficiency.
